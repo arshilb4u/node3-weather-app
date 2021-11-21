@@ -11,7 +11,7 @@ const forcast=(latitude,longitude,callback)=>{
             callback("unable to find location",undefined)
         }
         else{
-            callback(undefined,"It is currently "+response.body.current.temperature+",but feels like "+response.body.current.feelslike+" now.")
+            callback(undefined,"It is currently "+response.body.current.temperature+",but feels like "+response.body.current.feelslike+" now." +"And the humidity is "+response.body.current.humidity+"%.")
                 }
     })
 
