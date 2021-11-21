@@ -6,7 +6,7 @@ const forecast=require('./utils/forcast')
 const forcast = require("./utils/forcast")
 
 const app=express()
-const port=process.eventNames.PORT || 3000
+const port=process.env.PORT || 3000
 
 //Define path
 const publicDirectoryPath=path.join(__dirname,'../public')
